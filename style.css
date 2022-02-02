@@ -138,6 +138,22 @@ section {
   text-transform: uppercase;
 }
 
+.home .image-slider {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.home .image-slider img {
+  height: 9rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+
+.home .image-slider img:hover {
+  transform: translateY(-2rem);
+}
+
 /* media queries */
 @media (max-width: 991px) {
   html {
@@ -176,14 +192,27 @@ section {
 
   .header .navbar a {
     display: block;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0;
     padding: 1.5rem 2rem;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+  .home .row .content h3 {
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home .row .image img {
+    height: auto;
+    width: 100%;
   }
 }
