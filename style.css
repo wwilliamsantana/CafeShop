@@ -4,8 +4,8 @@
   --main-color: #443;
   --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
   --border-radius-hover: 4% 95% 6% 95%/95% 4% 92% 5%;
-  --border: 0.2rem solid var(--main-color)
-  --border-hover: 0.2rem dashed var(--main-color)
+  --border: 0.2rem solid var(--main-color);
+  --border-hover: 0.2rem dashed var(--main-color);
 }
 
 * {
@@ -20,16 +20,33 @@
   transition: all 0.2s linear;
 }
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-margin-top: 7rem;
 }
 
-.header{
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--border-radius);
+  color: var(--main-color);
+  border: var(--border);
+  background: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  border-radius: var(--border-radius-hover);
+  border: var(--border-hover);
+}
+
+.header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
   display: flex;
@@ -37,6 +54,25 @@ html{
   justify-content: space-between;
   z-index: 1000;
   background: #ffff;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem 9%;
+}
+
+.header .logo {
+  color: var(--main-color);
+  font-size: 2.3rem;
+}
+
+.header .logo i {
+  padding-left: 0.5rem;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: var(--main-color);
+}
+
+.header .btn {
+  margin-top: 0;
 }
