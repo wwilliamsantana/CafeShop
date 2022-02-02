@@ -100,6 +100,10 @@ html {
     display: initial;
   }
 
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
   .header .navbar {
     position: absolute;
     top: 99%;
@@ -107,6 +111,10 @@ html {
     right: 0;
     background: #fff;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .header .navbar a {
