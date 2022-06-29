@@ -9,7 +9,7 @@
 
 ## :computer: Sobre  
 
-<p>Landing Page de uma cafeteria. </p>
+<p> Projeto feito com intuito de praticar e aplicar conceitos novos. Projeto elaborado em conjunto ao <a href="https://www.youtube.com/watch?v=52sKmRsk7xU" target="_blank"> Mr. Web Designer (vídeo)</a> </p>
 
 
 ## :rocket: Techs
